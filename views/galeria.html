@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="icon" href="../favicon.png">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+       <!-- Barra de navegacion -->
+    <nav>
+        <ul class="navbar">  
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./presupuesto.html" >Presupuesto</a></li>
+            <li><a class="active" href="#" >Galería</a></li>
+            <li><a href="../index.html" >Inicio</a></li>
+            <li class="logotipo"> <img src="../favicon.png" alt="Rolex Logo"> 
+            <span class="nombrePagina"><strong>Relojes de Lujo</strong></span></li>             
+              
+
+        </ul>
+    </nav>
+    </header>
+            <!-- Galeria dinamica de fotos con Javacript -->
+
+    <main>
+      <div class="nomeGaleria"><h1>Galería Dinámica</h1></div>
+      <div class="slider-container">
+        <div class="slider" id="slider">
+            <img src="../images/reloj1.jpg" alt="Reloj 1">
+            <img src="../images/reloj2.jpg" alt="Reloj 2">
+            <img src="../images/reloj3.jpg" alt="Reloj 3">
+            <img src="../images/reloj4.jpg" alt="Reloj 4">
+            <img src="../images/reloj5.jpg" alt="Reloj 5">
+        </div>
+        <div class="nav-buttons">
+            <button id="anterior">&#10094;</button>
+            <button id="proxima">&#10095;</button>
+        </div>
+        <div class="botones" id="botones"></div>
+    </div>
+
+    </main>
+
+    <footer class="footer">
+        <!-- Redes sociales -->
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/512px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook" width="30" height="30">
+          </a>
+         
+          <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/512px-Instagram_icon.png" alt="Instagram" width="30" height="30">
+          </a>
+        </div>
+    
+        <!-- Dirección de la empresa -->
+        <p>Dirección: Palma de Mallorca</p>
+    
+        <!-- Aviso legal -->
+        <p><a href="https://www.ionos.es/digitalguide/paginas-web/derecho-digital/aviso-legal-obligatorio-todo-lo-que-necesitas-saber/">Aviso legal</a></p>
+      </footer>
+      <script src="../js/galeria.js"></script>
+      <script src="../js/jquery-3.1.0.min.js"></script>
+
+</body>
+</html>

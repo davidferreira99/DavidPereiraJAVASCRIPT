@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.png">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body >
+<header> 
+         <!-- Barra de navegacion -->
+    <nav>
+      <ul class="navbar">
+            <li><a class="active"  href="#" >Contacto</a></li>
+            <li><a href="./presupuesto.html" >Presupuesto</a></li>
+            <li><a href="./galeria.html" >Galería</a></li>
+            <li><a href="../index.html" >Inicio</a></li>
+            <li class="logotipo"> <img src="../favicon.png" alt="Rolex Logo"> 
+            <span class="nombrePagina"><strong>Relojes de Lujo</strong></span></li>             
+              
+          </ul>
+        </nav>
+</header>
+<main >
+         <!-- Mapa con ruta desde la ubicacion del cliente hacia la tienda con OpenStreet -->
+  <div class="nombreSede">
+    <h1>Visítanos en nuestra sede</h1>
+  </div>
+    <p class="subSede">Encuentra la ubicación de la tienda.</p>
+      <div id="map" ></div>
+       
+
+
+     <div class="datosEmpresa">
+      <span class="contactoBorder"><strong>Datos de contacto : </strong></span>
+      971716712 - info@relojeriaalemana.com<br>
+      <span class="contactoBorder"><strong>Ubicación de la empresa :</strong></span> 
+      Pg. del Born, 19, Centre, 07012 Palma, Illes Balears
+     </div>
+    
+
+
+   
+
+  </main>
+
+
+    <footer class="footer">
+        <!-- Redes sociales -->
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/512px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook" width="30" height="30">
+          </a>
+         
+          <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/512px-Instagram_icon.png" alt="Instagram" width="30" height="30">
+          </a>
+        </div>
+    
+        <!-- Dirección de la empresa -->
+        <p>Dirección: Palma de Mallorca</p>
+    
+        <!-- Aviso legal -->
+        <p><a href="https://www.ionos.es/digitalguide/paginas-web/derecho-digital/aviso-legal-obligatorio-todo-lo-que-necesitas-saber/">Aviso legal</a></p>
+      </footer>
+
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+      <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+      <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+      <script src="../js/contactos.js"></script>
+      
+
+</body>
+</html>
+
+<!--En las últimas versiones de Leaflet han restringido un poco mas la App, limitando las conexiones y siendo necesaria la implementación de Geocoder para una fluida búsqueda de rutas.
+
+
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />-->
